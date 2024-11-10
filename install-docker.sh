@@ -70,6 +70,9 @@ print_status "yellow" "Installing Docker packages..."
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 check_status "Docker installation"
 
+sudo usermod -aG docker $USER
+echo "User $USER added to the docker group. Please log out and log back in for changes to take effect."
+
 # Verify installation
 print_status "yellow" "Verifying Docker installation..."
 if docker run hello-world &>/dev/null; then
