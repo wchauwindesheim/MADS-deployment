@@ -21,3 +21,12 @@ curl -sSL https://raw.githubusercontent.com/raoulg/serverinstall/refs/heads/mast
 to install things like `zsh`, `eza`, `starship`, `rye`  and I add some aliases to the `.zshrc` file.
 This script is still experimental, it is very opinionated and subject to frequent changes, but it improves my experience so
 it might do the same for you. Of course, you can also make your own script, or do it manually.
+
+## Under construction
+Please note that this repository is under construction.
+This means that you will find lesson-1, but lesson-2 is not there, yet.
+Protip: keep the main branch clean, and if you think you need to modify things, do 
+that in your own branch in such a way that you will be able to pull and merge updates:wq
+
+
+
