@@ -16,9 +16,9 @@ Isolate the three steps in the process:
 3. model
 
 This means you should set up a project that looks like this:
-```bash
+```toml
 ├── Makefile                   <- Makefile with commands like `make ingest` or `make train`
-|── pyproject.toml             <- The dependencies file
+├── pyproject.toml             <- The dependencies file
 ├── README.md                  <- The top-level README for developers using this project.
 ├── logs
 │   └── logfile.log            <- Logfile for the project
@@ -28,9 +28,9 @@ This means you should set up a project that looks like this:
 ├── ingest                     <- The ingest module
 │   ├── ingest.Dockerfile      <- Dockerfile for the ingest module.
 │   └── ingest.py              <- The script for the ingest module
-└── preprocess
-    ├── preprocess.Dockerfile
-    └── preprocess.py
+├── preprocess
+│   ├── preprocess.Dockerfile
+│   └── preprocess.py
 ├── model
 │   ├── model.py
 │   ├── requirements.txt       <- The requirements file for reproducing the analysis environment
