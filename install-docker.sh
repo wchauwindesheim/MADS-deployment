@@ -41,4 +41,15 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 print_status "yellow" "Setting up user permissions..."
 sudo usermod -aG docker $USER
 
-print_status "green" "Installation complete! Please log out and back in, or run: newgrp docker"
+# Verify installation
+print_status "yellow" "Verifying Docker installation..."
+if ! sudo docker run hello-world &>/tmp/docker-test.log; then
+    print_status "red" "✘ Docker verification failed. Check the following logs:"
+    print_status "yellow" "Docker test output: cat /tmp/docker-test.log"
+    print_status "yellow" "System logs: sudo journalctl -u docker.service"
+    print_status "yellow" "Docker daemon logs: docker info"
+    exit 1
+fi
+
+print_status "green" "✔ Docker installation verified successfully!"
+print_status "green" "Please log out and back in, or run: newgrp docker"
