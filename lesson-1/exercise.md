@@ -1,12 +1,14 @@
 # Exercise
 
-## setup
-0. setup your own project (git, dependency management, etc, see [codestyle](https://github.com/raoulg/codestyle) for details)
+## Prepare
+
 1. Install the dependencies using the `pyproject.toml` file.
 2. Have a look at the minimal and minimal-fastapi examples.
-2. Have a look at the notebooks, and run them.
+3. Have a look at the notebooks, and run them.
+4. setup your own project (git, dependency management, etc, see [codestyle](https://github.com/raoulg/codestyle) for details) for the exercise
 
-Using the information from the lesson and the minimal examples, you will move this to docker.
+# Task
+Using the information from the lesson and the minimal examples, your task is to move this to docker.
 
 Isolate the three steps in the process:
 1. ingest
