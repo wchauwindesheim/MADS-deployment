@@ -18,6 +18,6 @@ which can be run very simply by running
 ```bash
 curl -sSL https://raw.githubusercontent.com/raoulg/serverinstall/refs/heads/master/generalserver.sh | bash
 ```
-to install things like zsh, eza, starship, rye and I add some aliases to the `.zshrc` file.
+to install things like `zsh`, `eza`, `starship`, `rye`  and I add some aliases to the `.zshrc` file.
 This script is still experimental, it is very opinionated and subject to frequent changes, but it improves my experience so
 it might do the same for you. Of course, you can also make your own script, or do it manually.
