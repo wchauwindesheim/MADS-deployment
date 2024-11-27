@@ -16,7 +16,7 @@ Isolate the three steps in the process:
 3. model
 
 This means you should set up a project that looks like this:
-```toml
+```md
 ├── Makefile                   <- Makefile with commands like `make ingest` or `make train`
 ├── pyproject.toml             <- The dependencies file
 ├── README.md                  <- The top-level README for developers using this project.
