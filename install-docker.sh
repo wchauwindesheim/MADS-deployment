@@ -61,7 +61,7 @@ tee /etc/apt/sources.list.d/docker.list > /dev/null
 check_status "Docker repository addition"
 
 # Update package index again
-elseint_status "yellow" "Updating package index with Docker repository..."
+print_status "yellow" "Updating package index with Docker repository..."
 apt-get update
 check_status "Package index update with Docker repository"
 
@@ -70,8 +70,11 @@ print_status "yellow" "Installing Docker packages..."
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 check_status "Docker installation"
 
-sudo usermod -aG docker $USER
-echo "User $USER added to the docker group. Please log out and log back in for changes to take effect."
+ACTUAL_USER=$(logname || whoami)
+
+# Add user to docker group
+sudo usermod -aG docker $ACTUAL_USER
+echo "User $ACTUAL_USER added to the docker group. Please log out and log back in for changes to take effect."
 
 # Verify installation
 print_status "yellow" "Verifying Docker installation..."
