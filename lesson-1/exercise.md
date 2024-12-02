@@ -40,7 +40,7 @@ This means you should set up a project that looks like this:
 
 Please note that you will probably want to install dependencies in the ingest and preprocess
 images too, but if it are just one or two dependencies,
-it is reasonable to ommit the requirements file and
+it is reasonable to omit the requirements file and
 simply do eg. `RUN pip install --no-cache-dir pandas` to install just pandas.
 
-I provides an example Makefile, to show you how to mount volumes with the `-v` flag
+I provided an example Makefile, for this structure, to show you how to mount volumes with the `-v` flag
