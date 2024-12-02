@@ -3,9 +3,9 @@ FROM python:3.12-slim
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-COPY src src
-
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+COPY src src
 
 EXPOSE 8000
 
