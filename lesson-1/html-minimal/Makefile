@@ -24,11 +24,14 @@ help:
 
 # you will first need to run the 3.model notebook to save the image
 # then, we can create a directory and copy the image to it
-copy-image:
+# this will check if img/clustering.png exists, if not, it will run the command
+# this recipe depends on ../img/clustering.png, and if that file changes, this will run
+# it uses automatic variables ($< for the first prerequisite and $@ for the target name)
+img/clustering.png: ../img/clustering.png
 	mkdir -p img
-	cp ../img/clustering.png ./img/clustering.png
+	cp $< $@
 
-build: copy-image
+build: img/clustering.png
 	@echo "$(YELLOW)Building Docker image...$(NC)"
 	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
 	@echo "$(GREEN)Build complete!$(NC)"
