@@ -1,0 +1,7 @@
+loguru
+numpy
+scikit-learn
+pandas
+seaborn
+fastparquet
+matplotlib

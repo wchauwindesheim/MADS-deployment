@@ -5,7 +5,7 @@ import os
 
 # Define the directory and file name
 log_dir = "/app/logs"
-log_file = os.path.join(log_dir, "app.log")
+log_file = os.path.join(log_dir, "ingest.log")
 
 # Add a file handler to Loguru
 logger.add(log_file, rotation="10 MB")  # Rotate the log file after it reaches 10 MB
