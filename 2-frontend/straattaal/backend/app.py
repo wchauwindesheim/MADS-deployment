@@ -1,16 +1,19 @@
 import json
-import os
 from pathlib import Path
 
 import torch
-from flask import Flask, jsonify, render_template, request
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from loguru import logger
+from pydantic import BaseModel
 from slanggen import models
 from tokenizers import Tokenizer
 from utils import sample_n
 
 logger.add("logs/app.log", rotation="5 MB")
-frontend_folder = Path("frontend").resolve()
+
+frontend_folder = Path("static").resolve()
 artefacts = Path("artefacts")
 
 if not frontend_folder.exists():
@@ -23,14 +26,13 @@ if not artefacts.exists():
 else:
     logger.info(f"Found {artefacts}")
 
+app = FastAPI()
 
-app = Flask(
-    __name__,
-    template_folder=frontend_folder / "templates",
-    static_folder=frontend_folder / "static",
-)
+# Serve static files
+app.mount("/static", StaticFiles(directory=str(frontend_folder)), name="static")
 
 
+# Model loading
 def load_model():
     tokenizerfile = str(artefacts / "tokenizer.json")
     tokenizer = Tokenizer.from_file(tokenizerfile)
@@ -46,7 +48,7 @@ model, tokenizer = load_model()
 starred_words = []
 
 
-def new_words(n, temperature):
+def new_words(n: int, temperature: float):
     output_words = sample_n(
         n=n,
         model=model,
@@ -57,48 +59,50 @@ def new_words(n, temperature):
     return output_words
 
 
-@app.route("/generate", methods=["GET"])
-def generate_words():
+class Word(BaseModel):
+    word: str
+
+
+@app.get("/generate")
+async def generate_words(num_words: int = 10, temperature: float = 1.0):
     try:
-        n = int(request.args.get("num_words", 10))
-        temperature = float(request.args.get("temperature", 1.0))
-    except ValueError:
-        return jsonify({"error": "Invalid input"}), 400
-    try:
-        words = new_words(n, temperature)
-        return jsonify(words)
+        words = new_words(num_words, temperature)
+        return words
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.route("/starred", methods=["GET", "POST"])  # type: ignore
-def handle_starred_words():
-    if request.method == "GET":
-        return jsonify(starred_words)
-    elif request.method == "POST":
-        word = request.json.get("word")  # type: ignore
-        if word not in starred_words:
-            starred_words.append(word)
-        return jsonify(starred_words)
+@app.get("/starred")
+async def get_starred_words():
+    return starred_words
 
 
-@app.route("/unstarred", methods=["POST"])
-def handle_unstarred_words():
-    word = request.json.get("word")  # type: ignore
-    if word in starred_words:
-        starred_words.remove(word)
-    return jsonify(starred_words)
+@app.post("/starred")
+async def add_starred_word(word: Word):
+    if word.word not in starred_words:
+        starred_words.append(word.word)
+    return starred_words
 
 
-@app.route("/health", methods=["GET"])
-def health():
-    return jsonify({"status": "ok"})
+@app.post("/unstarred")
+async def remove_starred_word(word: Word):
+    if word.word in starred_words:
+        starred_words.remove(word.word)
+    return starred_words
 
 
-@app.route("/", methods=["GET"])
-def home():
-    return render_template("index.html")
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
+
+@app.get("/")
+async def read_index():
+    logger.info("serving index.html")
+    return FileResponse("static/index.html")
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=80)
