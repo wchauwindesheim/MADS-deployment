@@ -1,7 +1,7 @@
 build:
 	docker build -t mads-ingest -f ingest/ingest.Dockerfile .
 	docker build -t mads-preprocess -f preprocess/preprocess.Dockerfile .
-	docker build -t mads-model -f model/serve.Dockerfile .
+	docker build -t mads-model -f model/model.Dockerfile .
 
 run:
 	docker run \
@@ -18,4 +18,7 @@ run:
 
 clean:
 	rm -rf data/*
+
+interactive:
+	docker run -it --rm $(name) /bin/bash
 
