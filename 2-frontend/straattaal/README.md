@@ -4,8 +4,12 @@ First, build the environment with
 ```bash
 rye sync --all-features
 ```
+We use `--all-features` because we also want to install the optional packages (`fastapi`,` beautifulsoup4`.)
 
-We use `--all-features` because we also want to install the optional packages (`flask`,` beautifulsoup4`.)
+and activate with
+```bash
+source .venv/bin/activate
+```
 
 Note how I added
 ```toml
@@ -28,7 +32,10 @@ If everything works as expected, you can build the `src/slanggen` package into a
 rye build --clean
 ```
 
-This should produce a `dist` folder, and shoud add these two files:
+I published slanggen at [pypi](https://pypi.org/project/slangpy/) which you can do with
+`rye publish` after making an account.
+
+`rye build` should produce a `dist` folder, and shoud add these two files:
 ```bash
 ❯ lsd dist
 .rw-r--r--@ 9.5k username  4 Dec 14:35  slanggen-0.3.1.tar.gz
@@ -38,9 +45,24 @@ This should produce a `dist` folder, and shoud add these two files:
 With this, you can now run
 
 ```bash
-python backend/app.py
+cd backend
+python app.py
 ```
 And this will start an api at http://127.0.0.1:80
 Test if everything works as expected.
 
+# Exercise
+create a Dockerfile that:
+- uses a small build of torch
+- installs the requirements for the backend
+- copies all necessary backend files. Pay special attention to required paths!
+- study `backend/app.py` to see what is expected
+- install the slanggen from the wheel
+- expose port 80
 
+create a Makefile that:
+- checks for the wheel. If the wheel doesnt exist, use `rye` to build it
+- checks if the trained model is present. If not, train the file. 
+- builds the docker image, if the wheel and model exist
+- runs the docker on port 80 
+- test if you can access the application via SURF
