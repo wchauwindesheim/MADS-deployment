@@ -1,6 +1,0 @@
-2024-12-04 16:44:19.299 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download
-2024-12-04 16:46:21.005 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download
-2024-12-04 16:51:07.602 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download
-2024-12-04 16:54:41.629 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download
-2024-12-04 16:58:47.270 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download
-2024-12-04 17:11:33.388 | INFO     | __main__:download:29 - File data/raw/posts.json already exists, skipping download

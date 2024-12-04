@@ -1,8 +1,0 @@
-2024-12-04 16:58:51.470 | INFO     | __main__:batch_seq:32 - Splitting text into 100 parts of 7734 characters each
-2024-12-04 16:58:51.471 | INFO     | __main__:batch_seq:35 - Removing 1 parts
-2024-12-04 16:58:51.935 | INFO     | __main__:reduce_dims:57 - Using PCA
-2024-12-04 16:58:52.533 | INFO     | __main__:<module>:96 - Starting server on port 8000
-2024-12-04 17:11:40.141 | INFO     | __main__:batch_seq:35 - Splitting text into 100 parts of 7734 characters each
-2024-12-04 17:11:40.143 | INFO     | __main__:batch_seq:38 - Removing 1 parts
-2024-12-04 17:11:40.640 | INFO     | __main__:reduce_dims:60 - Using PCA
-2024-12-04 17:11:40.761 | INFO     | __main__:<module>:107 - Starting server on port 8000
