@@ -1,0 +1,4 @@
+artefacts/*
+assets/*
+!**/.gitkeep
+**/logs
