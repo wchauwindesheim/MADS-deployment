@@ -7,8 +7,6 @@ services:
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
-    depends_on:
-      - model
 
   preprocess:
     build:
@@ -29,6 +27,8 @@ services:
       - ./logs:/app/logs
     ports:
       - "8000:8000"
+    depends_on:
+      - preprocess
 
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8000/health && exit 0 || exit 1"]
