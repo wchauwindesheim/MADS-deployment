@@ -14,7 +14,7 @@ from utils import sample_n
 logger.add("logs/app.log", rotation="5 MB")
 
 frontend_folder = Path("static").resolve()
-artefacts = Path("artefacts")
+artefacts = Path("artefacts").resolve()
 
 if not frontend_folder.exists():
     raise FileNotFoundError(f"Cant find the frontend folder at {frontend_folder}")
@@ -22,7 +22,13 @@ else:
     logger.info(f"Found {frontend_folder}")
 
 if not artefacts.exists():
-    raise FileNotFoundError(f"Cant find the artefacts folder at {artefacts}")
+    logger.warning(f"Couldnt find artefacts at {artefacts}, trying parent")
+    artefacts = Path("../artefacts").resolve()
+    if not artefacts.exists():
+        msg = f"Cant find the artefacts folder at {artefacts}"
+        raise FileNotFoundError(msg)
+    else:
+        logger.info(f"Found {artefacts}")
 else:
     logger.info(f"Found {artefacts}")
 
