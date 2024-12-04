@@ -7,6 +7,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY ingest/src src
 
-WORKDIR src
+# WORKDIR src
 
-CMD ["python", "ingest.py"]
+CMD ["python", "src/ingest.py"]

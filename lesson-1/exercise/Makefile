@@ -1,3 +1,8 @@
+rebuild:
+	docker build --no-cache -t mads-ingest -f ingest/ingest.Dockerfile .
+	docker build --no-cache -t mads-preprocess -f preprocess/preprocess.Dockerfile .
+	docker build --no-cache -t mads-model -f model/model.Dockerfile .
+
 build:
 	docker build -t mads-ingest -f ingest/ingest.Dockerfile .
 	docker build -t mads-preprocess -f preprocess/preprocess.Dockerfile .
