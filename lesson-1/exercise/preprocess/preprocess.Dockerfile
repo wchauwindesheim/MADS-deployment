@@ -7,6 +7,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY preprocess/src src
 
-WORKDIR src
+# WORKDIR src
 
-CMD ["python", "preprocess.py"]
+CMD ["python", "src/preprocess.py"]

@@ -27,3 +27,6 @@ clean:
 interactive:
 	docker run -it --rm $(name) /bin/bash
 
+clean_docker:
+	docker system prune -af
+
