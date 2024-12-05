@@ -51,7 +51,7 @@ clean:
 
 test: $(DOCKER_ID_FILE)
 	@echo "$(YELLOW)Running unit and API tests...$(NC)"
-	pytest -v -m "api or unit or hypothesis"
+	pytest -v -m "api or unit or hypothesis" --hypothesis-show-statistics
 	pytest --cov=src -m "api or unit or hypothesis"
 	@echo "$(GREEN)Tests complete!$(NC)"
 
