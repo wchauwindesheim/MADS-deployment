@@ -10,3 +10,4 @@ wheels/
 .venv
 .hypothesis
 .coverage
+.docker_image_id
