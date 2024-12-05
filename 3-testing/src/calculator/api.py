@@ -1,3 +1,7 @@
+import datetime
+from datetime import timezone
+
+import psutil
 from calculator import Calculator
 from fastapi import FastAPI, HTTPException
 
@@ -30,4 +34,18 @@ def read_root():
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    try:
+        test_add = calc.add(2, 3) == 5
+        test_divide = calc.divide(6, 2) == 3
+
+        return {
+            "status": "healthy" if (test_add and test_divide) else "degraded",
+            "timestamp": datetime.datetime.now(timezone.utc).isoformat(),
+            "uptime": psutil.Process().create_time(),
+            "memory": {
+                "used": psutil.Process().memory_info().rss / 1024 / 1024,
+                "percent": psutil.Process().memory_percent(),
+            },
+        }
+    except Exception as e:
+        return {"status": "unhealthy", "error": str(e)}, 500
