@@ -9,7 +9,6 @@ from hypothesis import strategies as st
 @pytest.mark.hypothesis
 class TestCalculator:
     def setup_class(self):
-        """Fixture to create a Calculator instance for each test."""
         self.calculator = Calculator()
 
     # Property-based tests using Hypothesis
