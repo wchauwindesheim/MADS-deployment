@@ -38,6 +38,7 @@ class TestCalculator:
         # Test associativity: (a + b) + c = a + (b + c)
         c = 42  # Fixed value for testing associativity
         epsilon = 1e-12
+        # epsilon = 0
         left = self.calculator.add(self.calculator.add(x, y), c)
         right = self.calculator.add(x, self.calculator.add(y, c))
         assert abs(left - right) < epsilon
