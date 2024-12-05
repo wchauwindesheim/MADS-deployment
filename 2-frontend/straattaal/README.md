@@ -66,3 +66,7 @@ create a Makefile that:
 - builds the docker image, if the wheel and model exist
 - runs the docker on port 80 
 - test if you can access the application via SURF
+
+Additional:
+- split up straattaal into multiple dockerfiles
+- implement docker-compose.yml for straattaal
