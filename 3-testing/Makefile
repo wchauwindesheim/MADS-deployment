@@ -47,12 +47,14 @@ clean:
 	-docker stop $(IMAGE_NAME) 2>/dev/null || true
 	-docker rm $(IMAGE_NAME) 2>/dev/null || true
 	-docker rmi $(IMAGE_NAME):$(IMAGE_TAG) 2>/dev/null || true
+	-docker compose down
 	@rm -f $(DOCKER_ID_FILE)
 	@echo "$(GREEN)Cleanup complete!$(NC)"
 
 compose: clean
 	@echo "$(YELLOW)Startin docker compose$(NC)"
 	@docker compose up -d
+	docker compose exec calculator bash -c "curl --version"
 	@echo "$(GREEN)Service running on http://localhost:$(PORT)/docs$(NC)"
 
 test: $(DOCKER_ID_FILE)
