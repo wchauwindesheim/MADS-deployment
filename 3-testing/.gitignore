@@ -11,3 +11,4 @@ wheels/
 .hypothesis
 .coverage
 .docker_image_id
+.pytest_cache
