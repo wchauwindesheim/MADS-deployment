@@ -9,7 +9,7 @@ class TestDocker:
 
     def test_health(self):
         response = requests.get(f"{self.base_url}/health")
-        assert response.json()["status"] == "ok"
+        assert response.json()["status"] == "healthy"
 
     def test_add(self):
         response = requests.get(f"{self.base_url}/add/2/3")
