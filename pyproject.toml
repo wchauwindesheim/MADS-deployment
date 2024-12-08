@@ -25,5 +25,5 @@ dev-dependencies = [
     "jupyter>=1.1.1",
     "isort>=5.13.2",
     "ruff>=0.8.0",
-    "mypy>=1.13.0",
+    "pyright>=1.1.389",
 ]

@@ -1,0 +1,40 @@
+
+services:
+  ingest:
+    build:
+      context: .
+      dockerfile: ingest/ingest.Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+
+  preprocess:
+    build:
+      context: .
+      dockerfile: preprocess/preprocess.Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - ingest
+
+  model:
+    build:
+      context: .
+      dockerfile: model/serve.Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    ports:
+      - "8000:8000"
+    depends_on:
+      - preprocess
+
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health && exit 0 || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
