@@ -1,0 +1,453 @@
+<s>a mooi?</s>
+<s>fawaka?</s>
+<s>faka?</s>
+<s>inshallah</s>
+<s>fok op</s>
+<s>mahlish</s>
+<s>fakka</s>
+<s>het is planga weer</s>
+<s>kifesh</s>
+<s>faka</s>
+<s>fawaka</s>
+<s>tabonnemok!</s>
+<s>fak af</s>
+<s>ey beter hou je je bek.</s>
+<s>op je tiffies geslagen worden</s>
+<s>ga snel loesoe</s>
+<s>ik ga</s>
+<s>pia!</s>
+<s>ik ben skeer</s>
+<s>ik word para</s>
+<s>wallah</s>
+<s>laat!</s>
+<s>wahekela!</s>
+<s>wollah</s>
+<s>ballen slaan</s>
+<s>ami</s>
+<s>jtg</s>
+<s>fayanoia</s>
+<s>je bent niet helemaal barkie</s>
+<s>mama na yo</s>
+<s>etsjer kehba yemesh</s>
+<s>yallah!</s>
+<s>wakka</s>
+<s>yemma ino i3izzan!</s>
+<s>trenna pakken</s>
+<s>mi gaddo</s>
+<s>fnitan</s>
+<s>handek!</s>
+<s>kowed van hier</s>
+<s>tori praten</s>
+<s>wat kijk je lang!</s>
+<s>wat kijk je lang.</s>
+<s>kifesh met jou?</s>
+<s>watskebuurt</s>
+<s>abi?</s>
+<s>wollah-meh!</s>
+<s>izjen</s>
+<s>donnie</s>
+<s>een barkie</s>
+<s>barkie</s>
+<s>kop</s>
+<s>doezoe</s>
+<s>rug</s>
+<s>millie</s>
+<s>tjawa</s>
+<s>chawa</s>
+<s>chawa barkie</s>
+<s>lotto</s>
+<s>bankoe</s>
+<s>lit</s>
+<s>stikri</s>
+<s>litti</s>
+<s>brikka</s>
+<s>vuur</s>
+<s>kittie</s>
+<s>liboma</s>
+<s>pieltrekken</s>
+<s>pijptrekken</s>
+<s>pagga</s>
+<s>wenker</s>
+<s>appie</s>
+<s>amo</s>
+<s>damsko</s>
+<s>anti</s>
+<s>anti's</s>
+<s>armo</s>
+<s>gawi</s>
+<s>waggie</s>
+<s>waggi</s>
+<s>teringcel</s>
+<s>3lewi</s>
+<s>sedari</s>
+<s>koeiensperma</s>
+<s>gang</s>
+<s>gelakt</s>
+<s>paiso</s>
+<s>aight</s>
+<s>bijgogem</s>
+<s>bimre</s>
+<s>bims</s>
+<s>chiemi</s>
+<s>tatta</s>
+<s>kiefen</s>
+<s>skeer</s>
+<s>bimma</s>
+<s>kwarktassen</s>
+<s>zuignoppen</s>
+<s>bobbies</s>
+<s>bonjedempertje</s>
+<s>laat het</s>
+<s>inbraak</s>
+<s>broek</s>
+<s>broski</s>
+<s>brakka</s>
+<s>wesh</s>
+<s>brada</s>
+<s>broenoe</s>
+<s>lauw</s>
+<s>meet</s>
+<s>chigga</s>
+<s>chinoe</s>
+<s>chiqi</s>
+<s>sosa</s>
+<s>bakmeel</s>
+<s>coca</s>
+<s>wit</s>
+<s>domme</s>
+<s>bori</s>
+<s>crimi</s>
+<s>baas</s>
+<s>mekeurdonk</s>
+<s>3asses</s>
+<s>dinna</s>
+<s>agga</s>
+<s>niama</s>
+<s>broodje</s>
+<s>bolletje</s>
+<s>bempie</s>
+<s>krentenbol</s>
+<s>spebbe</s>
+<s>torie</s>
+<s>laterz</s>
+<s>thalla</s>
+<s>zoba</s>
+<s>whigger</s>
+<s>diddih</s>
+<s>tollen</s>
+<s>tappen</s>
+<s>soppie</s>
+<s>pila</s>
+<s>panja</s>
+<s>tilt</s>
+<s>wasted</s>
+<s>soma</s>
+<s>wahed</s>
+<s>bicka electronica</s>
+<s>bika elektra</s>
+<s>trappa</s>
+<s>kieren</s>
+<s>tjappen</s>
+<s>radicaal</s>
+<s>ollo</s>
+<s>fissa</s>
+<s>rwina</s>
+<s>ruina</s>
+<s>fissa</s>
+<s>bikoe</s>
+<s>umpie</s>
+<s>umpielumpie</s>
+<s>kill</s>
+<s>matsko</s>
+<s>chiengboy</s>
+<s>ollo</s>
+<s>gay</s>
+<s>welloe geld</s>
+<s>horse</s>
+<s>facka</s>
+<s>coulie</s>
+<s>znoen</s>
+<s>sappiemang</s>
+<s>doekoe</s>
+<s>cheese</s>
+<s>guap</s>
+<s>mula</s>
+<s>musa</s>
+<s>do</s>
+<s>floes</s>
+<s>mbongo</s>
+<s>buit</s>
+<s>jilla</s>
+<s>strap</s>
+<s>nakkoe</s>
+<s>gannu</s>
+<s>keihard</s>
+<s>fissie</s>
+<s>spijker</s>
+<s>vras</s>
+<s>koenis</s>
+<s>baba</s>
+<s>wif</s>
+<s>hooptie</s>
+<s>paopa</s>
+<s>prikka</s>
+<s>knul</s>
+<s>swa</s>
+<s>fatoe</s>
+<s>gotu</s>
+<s>grunchi</s>
+<s>nul-vijftig</s>
+<s>negen-zeven</s>
+<s>airbags</s>
+<s>bounty</s>
+<s>awo</s>
+<s>feune</s>
+<s>tantoe</s>
+<s>wirie</s>
+<s>assie</s>
+<s>stof</s>
+<s>hayek</s>
+<s>oekoe</s>
+<s>kech</s>
+<s>motjo</s>
+<s>banga</s>
+<s>ho</s>
+<s>kifesh</s>
+<s>ewa</s>
+<s>whattup</s>
+<s>kaaskop</s>
+<s>tatta</s>
+<s>goons</s>
+<s>nesim</s>
+<s>dagoe</s>
+<s>barkie</s>
+<s>zjnoen</s>
+<s>huts</s>
+<s>janken</s>
+<s>osso</s>
+<s>hoesoe</s>
+<s>bokonko geven</s>
+<s>blakkaman</s>
+<s>blakka</s>
+<s>crêmtje</s>
+<s>quick job</s>
+<s>brakka</s>
+<s>nigga</s>
+<s>nikka</s>
+<s>jonko</s>
+<s>djonko</s>
+<s>kush</s>
+<s>spliff</s>
+<s>zuenet</s>
+<s>kill</s>
+<s>swa</s>
+<s>djie</s>
+<s>drerries</s>
+<s>lakie</s>
+<s>skiemen</s>
+<s>mwana</s>
+<s>keffen</s>
+<s>djalla</s>
+<s>reetlikker</s>
+<s>spange chick</s>
+<s>mens met jungle-longen</s>
+<s>keh</s>
+<s>akka</s>
+<s>krakko</s>
+<s>kroezoe</s>
+<s>conjo</s>
+<s>bakroe</s>
+<s>bakru</s>
+<s>bokroe</s>
+<s>bokru</s>
+<s>affoe</s>
+<s>laffoe</s>
+<s>lappie</s>
+<s>leidse</s>
+<s>spang</s>
+<s>leven man</s>
+<s>chicky</s>
+<s>chickie</s>
+<s>korroe</s>
+<s>sjig</s>
+<s>vonk</s>
+<s>sannie</s>
+<s>tnawies</s>
+<s>pokoe</s>
+<s>skidy</s>
+<s>lobi</s>
+<s>baby boe</s>
+<s>boren</s>
+<s>skeamen</s>
+<s>wakka</s>
+<s>ham gaan</s>
+<s>ma3lish</s>
+<s>karsdash</s>
+<s>fappen</s>
+<s>pagga slaan</s>
+<s>joinen</s>
+<s>ams</s>
+<s>merrie</s>
+<s>sjenk</s>
+<s>millie</s>
+<s>flutse</s>
+<s>moer</s>
+<s>derm</s>
+<s>chimeid</s>
+<s>swagga boy</s>
+<s>chimi</s>
+<s>moesoe</s>
+<s>tapen</s>
+<s>bakra</s>
+<s>niffo</s>
+<s>nakio</s>
+<s>negra</s>
+<s>nosso</s>
+<s>welloe</s>
+<s>aightz</s>
+<s>nieges</s>
+<s>kowed</s>
+<s>bruya</s>
+<s>flashen</s>
+<s>outje</s>
+<s>ov'tje</s>
+<s>oefoe</s>
+<s>oevoe</s>
+<s>droppen</s>
+<s>pakoe</s>
+<s>pekkie pep</s>
+<s>pakkies</s>
+<s>dolloise</s>
+<s>het hoofd stofzuigen</s>
+<s>ippa geven</s>
+<s>soma</s>
+<s>jamma</s>
+<s>amsterdammertje</s>
+<s>blaffer</s>
+<s>kebber</s>
+<s>pletzen</s>
+<s>plofkraak</s>
+<s>plofkraak</s>
+<s>gra</s>
+<s>skotoe</s>
+<s>blauw</s>
+<s>five 'o</s>
+<s>scotoe</s>
+<s>ibahesj</s>
+<s>popo</s>
+<s>le7nesh</s>
+<s>takken</s>
+<s>gijsko</s>
+<s>sel3a</s>
+<s>sloerie</s>
+<s>bimbo</s>
+<s>kahbe</s>
+<s>kech</s>
+<s>koersevelo</s>
+<s>snaapse lik</s>
+<s>snaaps</s>
+<s>wahed zemmol</s>
+<s>fix</s>
+<s>rila</s>
+<s>rimma</s>
+<s>rijke tatta</s>
+<s>blazen</s>
+<s>roffa</s>
+<s>beef</s>
+<s>flappie</s>
+<s>dushi</s>
+<s>dampoe</s>
+<s>patta</s>
+<s>patta's</s>
+<s>scorro</s>
+<s>scribboe</s>
+<s>wassen</s>
+<s>boeke</s>
+<s>scooba</s>
+<s>scoeba</s>
+<s>yusu</s>
+<s>snel</s>
+<s>tfoe</s>
+<s>gerro</s>
+<s>etje</s>
+<s>tabacca</s>
+<s>snev</s>
+<s>scotten</s>
+<s>djaai</s>
+<s>chieren</s>
+<s>le7nesh</s>
+<s>dagga</s>
+<s>chioeka</s>
+<s>gedane zaak</s>
+<s>k3be</s>
+<s>kahbe</s>
+<s>slet</s>
+<s>vegen</s>
+<s>schatje</s>
+<s>roken</s>
+<s>snakeboi</s>
+<s>shantan</s>
+<s>zaad</s>
+<s>kef</s>
+<s>pagga</s>
+<s>gymma</s>
+<s>fotto</s>
+<s>stigga</s>
+<s>stinna</s>
+<s>sjenken</s>
+<s>kantelen</s>
+<s>sappen</s>
+<s>herk</s>
+<s>woeshoem</s>
+<s>pijpen</s>
+<s>scumbag</s>
+<s>bitch</s>
+<s>punchy</s>
+<s>zan9a</s>
+<s>goons</s>
+<s>gnoen</s>
+<s>swagga</s>
+<s>praten</s>
+<s>bagga</s>
+<s>jirp</s>
+<s>trinna</s>
+<s>trinnoe</s>
+<s>trinna</s>
+<s>soetoe</s>
+<s>turkoe</s>
+<s>ami</s>
+<s>sloffies</s>
+<s>poes</s>
+<s>kaarsvet</s>
+<s>tav</s>
+<s>matten</s>
+<s>beefen</s>
+<s>torie</s>
+<s>echekems</s>
+<s>miess</s>
+<s>vld</s>
+<s>balliepatta's</s>
+<s>fragga</s>
+<s>tonton</s>
+<s>mattie</s>
+<s>matties</s>
+<s>pekie</s>
+<s>wigga</s>
+<s>wippa</s>
+<s>loesoe</s>
+<s>pia</s>
+<s>wrokko</s>
+<s>djoenta</s>
+<s>wierie</s>
+<s>marijuana</s>
+<s>groen</s>
+<s>zina's</s>
+<s>lala</s>
+<s>wezebi</s>
+<s>perkie</s>
+<s>o'tje</s>
+<s>zogenaamd</s>
+<s>plangas</s>
+<s>luiaard</s>
+<s>hezi</s>
+<s>vallah</s>
